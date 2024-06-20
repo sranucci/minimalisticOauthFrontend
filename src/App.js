@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyB84lGRGJZgQ-9m_0f3Kn6E2YWskqIsQ3Y",
-  authDomain: "fir-auth-graphql-2d4eb.firebaseapp.com",
-  projectId: "fir-auth-graphql-2d4eb",
-  storageBucket: "fir-auth-graphql-2d4eb.appspot.com",
-  messagingSenderId: "623336785373",
-  appId: "1:623336785373:web:a72b6b38ac1579c19ca234"
-};
+import { firebaseConfig } from '../firebaseConfig';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
